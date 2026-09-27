@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown Timer</title>
+    <script src="script.js" defer></script>
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-color: black;
+
+        }   
+        .continer{
+
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            /* flex-direction: column; */
+        }
+        h1{
+            box-shadow: 0px 4px 100px whitesmoke;
+            padding: 2rem 2rem;
+            border-radius: 10px;
+            color: white;
+            margin: 0 1rem;
+            
+        }
+        .chidcontiner{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            position: relative;
+        }
+        span{
+            position: absolute;
+            color: wheat;
+            bottom: 0;
+            margin-top: 1rem;
+            
+        }
+        #heading{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            left: 39%;
+            top:30%;
+            font-size: 2rem;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2 id="heading">Coming Soon Now</h2>
+
+    <div class="continer">
+
+        <div class="chidcontiner">
+            <h1 id="day"></h1>
+            <span>days</span>
+        </div>
+        <div class="chidcontiner">
+            <h1> </h1>
+            <span>hours</span>
+        </div>
+        <div class="chidcontiner">
+            <h1> </h1>
+            <span>min</span>
+        </div>
+        <div class="chidcontiner">
+            <h1> </h1>
+            <span>sec</span>
+        </div>
+    </div>
+
+
+</body>
+</html>
